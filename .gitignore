@@ -1,0 +1,32 @@
+# ---- 测试产物 ----
+# 结果通常可由提示词重新生成，默认不入库
+results/
+outputs/
+*.log
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Node ----
+node_modules/
+dist/
+*.log
+
+# ---- 环境与密钥 ----
+.env
+.env.*
+!.env.example
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+
+# ---- 编辑器 ----
+.idea/
+.vscode/
+*.swp
