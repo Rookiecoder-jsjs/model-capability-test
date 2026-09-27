@@ -1,8 +1,12 @@
-# ---- 测试产物 ----
-# 结果通常可由提示词重新生成，默认不入库
-results/
-outputs/
+# 注意：本仓库存放测试结果，results/ 与 output 目录【必须】提交。
+# 上面这行注释是给人看的，规则从下一行才开始生效。
+
+# ---- 临时文件 / 中间产物 ----
+*.tmp
+*.bak
+*.swp
 *.log
+.cache/
 
 # ---- Python ----
 __pycache__/
@@ -15,7 +19,6 @@ venv/
 # ---- Node ----
 node_modules/
 dist/
-*.log
 
 # ---- 环境与密钥 ----
 .env
@@ -29,4 +32,3 @@ Thumbs.db
 # ---- 编辑器 ----
 .idea/
 .vscode/
-*.swp
