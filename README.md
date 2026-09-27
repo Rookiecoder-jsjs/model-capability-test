@@ -8,41 +8,28 @@
 
 ```
 mt/
-├── README.md
-├── .gitignore
-└── results/
-    └── <model-slug>/
-        └── <prompt_id>/
-            ├── meta.json    # 运行元数据：模型、参数、时间、提示词来源
-            └── output.md    # 模型原始输出
+├── AGENTS.md      # 规范：目录/命名/元数据/提交纪律，agent 与人共同遵守
+├── README.md      # 本文件
+├── results/
+│   ├── index.csv  # 全部结果的总索引
+│   └── <model>/
+│       └── <prompt_id>/
+│           ├── meta.json    # 运行元数据：模型、参数、提示词来源
+│           └── output.md    # 模型输出正文
+└── tools/         # 处理结果的脚本（可选）
 ```
 
-`<model-slug>` 用模型标识（如 `gpt-5`、`claude-opus-5`、`gemini-3-pro`），`<prompt_id>` 用提示词仓库中的唯一 ID。同一批提示词跑不同模型时，进本仓库不同目录，便于横向对比。
+同一批提示词跑不同模型时，结果落在不同模型目录下，便于横向对比。跨模型检索走 `results/index.csv`。
 
-## meta.json 字段约定
+## 规范
 
-```json
-{
-  "prompt_id": "reasoning-001",
-  "prompt_ref": "prompts/reasoning/reasoning-001.md",
-  "prompt_commit": "<提示词仓库的 commit sha>",
-  "model": "claude-opus-5",
-  "model_id": "<API 返回的精确模型 ID>",
-  "date": "2026-09-27T00:00:00Z",
-  "params": {
-    "temperature": 1.0,
-    "max_tokens": 8192
-  },
-  "judge": null
-}
-```
+见 [AGENTS.md](AGENTS.md)。要点：
 
-- `prompt_commit` 记录当时提示词的版本，保证结果可复现——提示词仓库改了以后仍能定位到原文。
-- `judge` 预留给评分结果（人工打分或自动评测的得分），跑完评测后回填。
+- 提示词不放本仓库；每条结果用 `prompt_id` + `prompt_commit` 回指提示词仓库，保证可复现。
+- `results/` 只放结果数据，脚本放 `tools/`。
+- **已提交的结果只追加、不修改、不删改历史。** 答得不好也是数据。
+- 本仓库为 public，提交前确认无密钥与个人信息。
 
-## 新增一条结果
+## 现状
 
-1. 从提示词仓库取 `prompt_id`。
-2. 在 `results/<model-slug>/<prompt_id>/` 下建目录。
-3. 写入 `meta.json` 和 `output.md`。
-4. 提交信息格式：`<prompt_id> · <model>`。
+仓库目前为空骨架，尚未录入任何测试结果。`index.csv` 为空表头。
