@@ -1,0 +1,9 @@
+[p1 "从芯片到 Agent · 大模型部署与 Agent 应用全流程" | space "FE-001 评分复核"(5): 1 managed, 0 untracked — p1* "从芯片到 Agent · 大模型部署与 Agent 应用全流程"]
+root
+  heading
+    text "从芯片到 Agent"
+  paragraph
+    text "当前浏览器已禁用 JavaScript，动态装配演示无法运行。下方仍可阅读全部八章的静态文案：芯片、显卡 / AI 加速卡、服务器、机柜、集群、大模型、Harnes..."
+  paragraph
+    text "启用 JavaScript 后可获得完整的一镜到底连续装配与 Agent 窗口演示。"
+

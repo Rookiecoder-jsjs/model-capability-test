@@ -1,0 +1,7 @@
+{
+  "case.json": "d69ca5fa272dded8560002ca57f196dc3cff3204757f1500e5c717b2a1be1b49",
+  "evaluation/rubric.zh-CN.md": "9ba9309eb47bc3195d22ac2fb3506b381682c93f256243935b68d7170bd86798",
+  "evaluation/checklist.zh-CN.md": "b1444d5b419097719c34c801fa2b642588e82e05bacb2dd19b01d30fcd75c9d2",
+  "evaluation/failure-modes.zh-CN.md": "e10b2346a4ed8f41a8f936109a0a82a588f9d68d5c59bfa988656ee553defbb0",
+  "fixtures/demo-task.json": "8e59cc4f832129ab7d136653a980a38763738ca9f51c8bb462c3d41b29cd4d51"
+}

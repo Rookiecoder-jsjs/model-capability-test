@@ -1,0 +1,67 @@
+{
+  "readings": [
+    {
+      "name": "mobile-390",
+      "viewport": [
+        390,
+        844
+      ],
+      "classes": "static-mode",
+      "overflow": -15,
+      "visibleChapters": 8,
+      "ariaHiddenChapters": 7,
+      "stageHidden": true,
+      "agentVisible": "visible"
+    },
+    {
+      "name": "text-200",
+      "viewport": [
+        1366,
+        893
+      ],
+      "classes": "text-200",
+      "overflow": -15,
+      "visibleChapters": 8,
+      "ariaHiddenChapters": 7,
+      "stageHidden": true,
+      "agentVisible": "visible"
+    },
+    {
+      "name": "reduced-motion",
+      "viewport": [
+        1366,
+        893
+      ],
+      "classes": "static-mode",
+      "overflow": -15,
+      "visibleChapters": 8,
+      "ariaHiddenChapters": 7,
+      "stageHidden": true,
+      "agentVisible": "visible"
+    },
+    {
+      "name": "keyboard-first-focus",
+      "element": "A",
+      "text": "跳到正文",
+      "outline": "solid",
+      "outlineWidth": "2px"
+    }
+  ],
+  "environment": {
+    "date": "2026-09-27T07:37:22.538Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "viewport": [
+      1366,
+      893
+    ],
+    "dpr": 1,
+    "visibility": "visible",
+    "focus": false,
+    "loadedFonts": [
+      {
+        "family": "Inter Variable",
+        "weight": "100 900"
+      }
+    ]
+  }
+}

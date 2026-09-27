@@ -1,0 +1,309 @@
+{
+  "schema_version": 2,
+  "assessment_id": "assessment-20260927T072932Z-bb3c43",
+  "created_at": "2026-09-27T07:40:02Z",
+  "kind": "score",
+  "target": {
+    "path": "results/space-bunny-free/frontend-001",
+    "commit": null,
+    "file_hashes": "evidence/target-sha256.json",
+    "note": "原结果尚未提交，用本次复核前的原文件 SHA-256 清单固定版本。"
+  },
+  "author": {
+    "kind": "model",
+    "name": "Codex",
+    "model_id": null,
+    "note": "精确评审模型 ID 未暴露；单评审，知道模型目录名，非盲评。"
+  },
+  "rubric": {
+    "ref": "https://github.com/Rookiecoder-jsjs/Benchmark_model/blob/20853e40f94f6bfc700a5c036ec252f50085c891/cases/frontend/FE-001-chip-to-agent/evaluation/rubric.zh-CN.md",
+    "revision": "20853e40f94f6bfc700a5c036ec252f50085c891",
+    "case_id": "FE-001",
+    "case_version": "1.0.0",
+    "hashes": "evidence/rubric-sha256.json"
+  },
+  "judge": {
+    "score": 39.0,
+    "max": 90,
+    "scope": "verified_dimensions_only",
+    "full_scale_max": 100,
+    "coverage_weight": 90,
+    "reported_total": null,
+    "status": "partial",
+    "dimensions": [
+      {
+        "id": "C1",
+        "name": "真实对象连续性",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 25,
+        "points": 12.5,
+        "reason": "真实节点引用持续存在，主要硬件链未替换；但最终窗口停止绘制原集群，且部分相同进度的世界矩阵依赖到达顺序。不能认定任意进度纯函数连续。",
+        "evidence": [
+          "evidence/geometry.json",
+          "evidence/1366-agent.png",
+          "../../project/src/app/stage.ts"
+        ]
+      },
+      {
+        "id": "C2",
+        "name": "装配与空间正确性",
+        "raw_score": 0,
+        "raw_max": 4,
+        "weight": 12,
+        "points": 0.0,
+        "reason": "sub() 将平移写入 [3,7,11]，渲染器读取 [12,13,14]；实测服务器上下板使用相同渲染位置。接触面与支撑几何基础不成立，原落位探针不能验证实际外壳。",
+        "evidence": [
+          "evidence/geometry.json",
+          "evidence/1366-server.png",
+          "../../project/src/scene/objects.ts",
+          "../../project/src/engine/render2d.ts"
+        ]
+      },
+      {
+        "id": "C3",
+        "name": "四层结构表达",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 10,
+        "points": 5.0,
+        "reason": "有集群与三层平台，但三平台同步升起而非逐层加入；最终只保留三个软件平台，底座消失，平台组件表达与窗口完整承接不足。",
+        "evidence": [
+          "evidence/geometry.json",
+          "evidence/1366-harness.png",
+          "evidence/1366-agent.png"
+        ]
+      },
+      {
+        "id": "C4",
+        "name": "UI 与逐章字体设计",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 15,
+        "points": 7.5,
+        "reason": "配色、粗体和语义断行有统一风格，但八章标题实测同字号：1366 宽均为 32.784px，1025 宽均为 24.8px；首屏、长短标题、复杂阶段未形成独立层级安排。",
+        "evidence": [
+          "evidence/layout-1366.json",
+          "evidence/layout-1025.json",
+          "evidence/1366-chip.png",
+          "../../project/src/app/dom.ts"
+        ]
+      },
+      {
+        "id": "C5",
+        "name": "文字可读性与构图",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 8,
+        "points": 4.0,
+        "reason": "稳定姿态普通正文可读；跨章节旧标签残留，如服务器章仍有 Agent/Harness/模型标签，窗口内标签错位且模型被裁切。不能达到全程清楚且标签不遮核心几何的要求。",
+        "evidence": [
+          "evidence/1366-server.png",
+          "evidence/1366-harness.png",
+          "evidence/1366-agent.png",
+          "evidence/text-contrast.json",
+          "../../project/src/main.ts"
+        ]
+      },
+      {
+        "id": "C6",
+        "name": "Agent 与导航交互",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 10,
+        "points": 5.0,
+        "reason": "导航、停止、重放幂等及下载通过；完成两次运行且导出简报正确。但重放过程中原 Harness exec 不变、画布停止更新；停止后“继续运行”实际从第一步重启，窗口承接有明显缺陷。",
+        "evidence": [
+          "evidence/interactions.json",
+          "evidence/agent-completed.png",
+          "../../project/src/app/agent-demo.ts",
+          "../../project/src/main.ts"
+        ]
+      },
+      {
+        "id": "C7",
+        "name": "动画与运行性能",
+        "raw_score": null,
+        "raw_max": 4,
+        "weight": 10,
+        "points": null,
+        "reason": "旧证据为 5 秒无头软件渲染；本次浏览器虽 visibility=visible，但未建立受控前台焦点/刷新率，未取得规定的正反向 10 秒各 500 帧间隔、长任务及画面更新证据。该维度未验证，不记零分。",
+        "evidence": [
+          "../../evidence/perf.txt",
+          "evidence/modes.json"
+        ]
+      },
+      {
+        "id": "C8",
+        "name": "适配与无障碍",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 5,
+        "points": 2.5,
+        "reason": "三种桌面、390 宽静态模式、根字号 200% 与减少动画主要可读，首个键盘焦点有 2px 轮廓；但无 JS 只剩提示语，没有八章基础文案；静态模式七章仍带 aria-hidden=true。",
+        "evidence": [
+          "evidence/modes.json",
+          "evidence/no-javascript.txt",
+          "evidence/no-javascript.png",
+          "evidence/mobile-390.png",
+          "../../project/index.html"
+        ]
+      },
+      {
+        "id": "C9",
+        "name": "工程交付与验证",
+        "raw_score": 2,
+        "raw_max": 4,
+        "weight": 5,
+        "points": 2.5,
+        "reason": "锁文件、源码及说明齐全，安装构建实际成功；但构建有 CSS 语法警告，核心自测仅比名称/目标坐标，遗漏真实绘制错误，且旧归档缺少 prompt commit、完整会话和运行配置。属于验证薄弱，未断言证据伪造。",
+        "evidence": [
+          "evidence/install.txt",
+          "evidence/build.txt",
+          "evidence/target-sha256.json",
+          "../../project/tools/verify.mjs",
+          "../../meta.json"
+        ]
+      }
+    ],
+    "reason": "已验证得分 39 / 覆盖权重 90；C7 未验证，不能折算或报告完整百分制排名。"
+  },
+  "gates": {
+    "G0": {
+      "name": "runnable",
+      "value": true,
+      "evidence": [
+        "evidence/build.txt",
+        "evidence/1366-chip.png"
+      ],
+      "reason": "实际构建并启动生产预览，无阻止主体使用的崩溃。"
+    },
+    "G1": {
+      "name": "true_one_take",
+      "value": true,
+      "evidence": [
+        "evidence/geometry.json",
+        "../../project/src/scene/assembly.ts"
+      ],
+      "reason": "通过最低门槛：实际对象引用保持、未用独立图片或重建实体替换。最终承接和到达顺序问题计入 C1；通过门槛不等于全程连续性满分。"
+    },
+    "G2": {
+      "name": "complete_chain",
+      "value": true,
+      "evidence": [
+        "evidence/layout-1366.json",
+        "evidence/1366-harness.png",
+        "evidence/interactions.json"
+      ],
+      "reason": "八个叙事阶段按顺序可达且有实质场景/应用实现；平台形成节奏和窗口底座缺失计入 C3，并不将整个集群阶段判为缺失。"
+    }
+  },
+  "checks": [
+    {
+      "name": "locked-dependency-install",
+      "status": "pass",
+      "evidence": [
+        "evidence/install.txt"
+      ]
+    },
+    {
+      "name": "production-build",
+      "status": "pass",
+      "evidence": [
+        "evidence/build.txt"
+      ],
+      "note": "构建成功但有 CSS 语法警告。"
+    },
+    {
+      "name": "runtime-reference-identity",
+      "status": "pass",
+      "evidence": [
+        "evidence/geometry.json"
+      ]
+    },
+    {
+      "name": "rendered-panel-placement",
+      "status": "fail",
+      "evidence": [
+        "evidence/geometry.json"
+      ]
+    },
+    {
+      "name": "replay-download",
+      "status": "pass",
+      "evidence": [
+        "evidence/interactions.json"
+      ]
+    },
+    {
+      "name": "replay-harness-synchronization",
+      "status": "fail",
+      "evidence": [
+        "evidence/interactions.json"
+      ]
+    },
+    {
+      "name": "no-js-reading",
+      "status": "fail",
+      "evidence": [
+        "evidence/no-javascript.txt"
+      ]
+    }
+  ],
+  "evidence": [
+    "report.md",
+    "evidence/review.mjs",
+    "evidence/geometry.json",
+    "evidence/interactions.json",
+    "evidence/modes.json"
+  ],
+  "environment": {
+    "os": "macOS 26.3 (25D125)",
+    "node": "v24.18.0",
+    "npm": "11.16.0",
+    "browser": "Ego browser / Chromium 152.0.0.0",
+    "viewports": [
+      [
+        1366,
+        893
+      ],
+      [
+        1025,
+        700
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "dpr": 1,
+    "text_scale": "根字号 32px 模拟 200%，非浏览器文字设置",
+    "setup": "npm ci --ignore-scripts --no-audit --no-fund --cache .cache/npm",
+    "build": "npm run build",
+    "preview": "npm run preview -- --host 127.0.0.1 --port 4179 --strictPort",
+    "note": "首轮安装 DNS 与回环监听受沙箱阻断，获准在沙箱外继续；环境阻断不作为模型失败扣分。禁用依赖安装脚本，未更改锁文件或项目源码。"
+  },
+  "unverified": [
+    "C7：受控前台的正反向性能采样、有效帧间隔、长任务、实际更新录像与后台恢复。",
+    "未完整覆盖验收清单每隔 5% 的全程录像、所有接触面的碰撞验证、全部内滚动与尺寸组合；现有证据已能定位上述缺陷，不将未覆盖项冒充通过。",
+    "未做真实手机、屏幕阅读器或浏览器字号面板实测。",
+    "未单独执行 WebGL 不可用测试；该实现使用 Canvas2D，不能仅凭技术栈声明替代所有降级验证。",
+    "原运行的 one-shot/multi-turn、精确底层模型、预算、原提示词 commit 未知，本次是用户指定新版细则下的追溯评分，不能用于严格同条件排名。"
+  ],
+  "supersedes": null,
+  "corrections": {},
+  "reason": "按用户指定 FE-001 1.0.0 细则独立复核现有 frontend-001 结果；只追加评分文档与证据，不修复模型项目。",
+  "provenance": {
+    "case_mapping": {
+      "archive_prompt_id": "frontend-001",
+      "external_case_id": "FE-001",
+      "basis": "用户本轮指定此案例评分；未声称当初运行使用同一版本提示词。"
+    },
+    "profile": null,
+    "source_modification": false
+  }
+}

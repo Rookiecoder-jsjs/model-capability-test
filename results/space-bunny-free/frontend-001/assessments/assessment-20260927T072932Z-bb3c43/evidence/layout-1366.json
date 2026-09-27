@@ -1,0 +1,234 @@
+[
+  {
+    "p": 0.0625,
+    "chapter": "chapter-chip",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 104.4375
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.1875,
+    "chapter": "chapter-card",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.3125,
+    "chapter": "chapter-server",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 52.21875
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.4375,
+    "chapter": "chapter-rack",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.5625,
+    "chapter": "chapter-cluster",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.6875,
+    "chapter": "chapter-model",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.8125,
+    "chapter": "chapter-harness",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 1,
+    "chapter": "chapter-agent",
+    "head": {
+      "size": "32.784px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 400,
+        "h": 80.6328125
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4609375,
+        "w": 400,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  }
+]

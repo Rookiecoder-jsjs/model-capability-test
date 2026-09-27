@@ -1,0 +1,126 @@
+{
+  "identity": {
+    "chip": true,
+    "card": true,
+    "server": true,
+    "rack": true,
+    "cluster": true
+  },
+  "reverse": [
+    {
+      "p": 1,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.97,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.953,
+      "maxWorldMatrixDelta": 1.962511922970404e-7
+    },
+    {
+      "p": 0.951,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.8,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.66,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.55,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.42,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.32,
+      "maxWorldMatrixDelta": 0.01209223013210492
+    },
+    {
+      "p": 0.28,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.2,
+      "maxWorldMatrixDelta": 0.000008112990440789503
+    },
+    {
+      "p": 0.175,
+      "maxWorldMatrixDelta": 0
+    },
+    {
+      "p": 0.1,
+      "maxWorldMatrixDelta": 0.044341840268773414
+    },
+    {
+      "p": 0.05,
+      "maxWorldMatrixDelta": 0
+    }
+  ],
+  "phases": [
+    {
+      "key": "model",
+      "progress": 0.7068136574074078,
+      "y": 3.534068287037039
+    },
+    {
+      "key": "harness",
+      "progress": 0.7068136574074078,
+      "y": 5.159739699074077
+    },
+    {
+      "key": "agent",
+      "progress": 0.7068136574074078,
+      "y": 6.785411111111114
+    }
+  ],
+  "serverPanels": [
+    {
+      "size": [
+        1.58,
+        0.04,
+        2.3
+      ],
+      "translation": [
+        1.4154765119786856,
+        0.8291498193177665,
+        0.7390222662834975
+      ],
+      "unused": [
+        1.4096052071826681,
+        0.33956210553105026,
+        0.7198025293162899
+      ]
+    },
+    {
+      "size": [
+        1.58,
+        0.04,
+        2.3
+      ],
+      "translation": [
+        1.4154765119786856,
+        0.8291498193177665,
+        0.7390222662834975
+      ],
+      "unused": [
+        1.4213478167747031,
+        1.3187375331044828,
+        0.7582420032507052
+      ]
+    }
+  ],
+  "serverCenter": {
+    "x": 1.4154765119786856,
+    "y": 0.8291498193177665,
+    "z": 0.7390222662834975
+  },
+  "method": "Synchronous progress sampling, reference equality, temporary renderer.box observation; not a performance test"
+}

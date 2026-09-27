@@ -1,0 +1,21 @@
+{
+  "method": "从外部 case.json 读取固定权重，按 weight*raw_score/4 求和，不归一化未验证项。",
+  "raw_scores": {
+    "C1": 2,
+    "C2": 0,
+    "C3": 2,
+    "C4": 2,
+    "C5": 2,
+    "C6": 2,
+    "C7": null,
+    "C8": 2,
+    "C9": 2
+  },
+  "verified_score": 39.0,
+  "coverage_weight": 90,
+  "reported_total": null,
+  "gates_cap": 100,
+  "original_profile_unknown": true,
+  "official_score_cli_run": false,
+  "note": "官方计分器要求已知 one-shot/multi-turn；为避免编造原测试方式，本次独立校验相同算术规则。"
+}

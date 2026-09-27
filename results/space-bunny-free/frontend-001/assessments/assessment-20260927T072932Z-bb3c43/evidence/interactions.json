@@ -1,0 +1,172 @@
+{
+  "navigation": [
+    {
+      "p": 0.06422018348623854,
+      "current": "0",
+      "chapter": "chapter-chip"
+    },
+    {
+      "p": 0.8108514908256881,
+      "current": "6",
+      "chapter": "chapter-harness"
+    },
+    {
+      "p": 0.3135751146788991,
+      "current": "2",
+      "chapter": "chapter-server"
+    },
+    {
+      "p": 0.9363532110091743,
+      "current": "7",
+      "chapter": "chapter-agent"
+    },
+    {
+      "p": 0.18800172018348624,
+      "current": "1",
+      "chapter": "chapter-card"
+    }
+  ],
+  "before": {
+    "demo": {
+      "run": "idle",
+      "steps": [
+        "pending",
+        "pending",
+        "pending",
+        "pending"
+      ],
+      "active": -1,
+      "progress": 0,
+      "downloadable": false,
+      "completions": 0
+    },
+    "exec": 0.29343600000000064,
+    "frames": 244,
+    "downloadDisabled": true,
+    "replayText": "重放任务"
+  },
+  "running": {
+    "demo": {
+      "run": "running",
+      "steps": [
+        "done",
+        "running",
+        "pending",
+        "pending"
+      ],
+      "active": 1,
+      "progress": 0.25545652174431344,
+      "downloadable": false,
+      "completions": 0
+    },
+    "exec": 0.29343600000000064,
+    "frames": 263,
+    "downloadDisabled": true,
+    "replayText": "执行中…"
+  },
+  "stopped": {
+    "demo": {
+      "run": "stopped",
+      "steps": [
+        "done",
+        "running",
+        "pending",
+        "pending"
+      ],
+      "active": 1,
+      "progress": 0.28304347826086956,
+      "downloadable": false,
+      "completions": 0
+    },
+    "exec": 0.29343600000000064,
+    "frames": 263,
+    "downloadDisabled": true,
+    "replayText": "继续运行"
+  },
+  "afterStopWait": {
+    "demo": {
+      "run": "stopped",
+      "steps": [
+        "done",
+        "running",
+        "pending",
+        "pending"
+      ],
+      "active": 1,
+      "progress": 0.28304347826086956,
+      "downloadable": false,
+      "completions": 0
+    },
+    "exec": 0.29343600000000064,
+    "frames": 263,
+    "downloadDisabled": true,
+    "replayText": "继续运行"
+  },
+  "restarted": {
+    "demo": {
+      "run": "running",
+      "steps": [
+        "running",
+        "pending",
+        "pending",
+        "pending"
+      ],
+      "active": 0,
+      "progress": 0.009565217391304347,
+      "downloadable": false,
+      "completions": 0
+    },
+    "exec": 0.29343600000000064,
+    "frames": 263,
+    "downloadDisabled": true,
+    "replayText": "执行中…"
+  },
+  "duplicateStart": false,
+  "completed": {
+    "demo": {
+      "run": "done",
+      "steps": [
+        "done",
+        "done",
+        "done",
+        "done"
+      ],
+      "active": -1,
+      "progress": 1,
+      "downloadable": true,
+      "completions": 1
+    },
+    "exec": 0.29343600000000064,
+    "frames": 263,
+    "downloadDisabled": false,
+    "replayText": "重新运行"
+  },
+  "download": {
+    "suggestedFilename": "项目进展简报.md",
+    "bytes": 779,
+    "sha256": "6f3fe255a5c7c3e51ac1f824a892bc76bf6d92f69e262729a9ee4313f3d09521",
+    "hasTitle": true,
+    "hasProgress": true,
+    "todoCount": 3,
+    "hasExpectedTodos": true
+  },
+  "secondCompleted": {
+    "demo": {
+      "run": "done",
+      "steps": [
+        "done",
+        "done",
+        "done",
+        "done"
+      ],
+      "active": -1,
+      "progress": 1,
+      "downloadable": true,
+      "completions": 2
+    },
+    "exec": 0.29343600000000064,
+    "frames": 263,
+    "downloadDisabled": false,
+    "replayText": "重新运行"
+  }
+}

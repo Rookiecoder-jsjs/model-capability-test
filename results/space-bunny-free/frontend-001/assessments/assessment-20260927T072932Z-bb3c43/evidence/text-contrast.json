@@ -1,0 +1,138 @@
+{
+  "method": "由实测计算样式计算稳定正文对 body 背景的对比度；未覆盖淡入中间态、模型经过背景和辅助标签。",
+  "samples": [
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-chip",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-card",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-server",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-rack",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-cluster",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-model",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-harness",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1025.json",
+      "chapter": "chapter-agent",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-chip",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-card",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-server",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-rack",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-cluster",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-model",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-harness",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1366.json",
+      "chapter": "chapter-agent",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1920.json",
+      "chapter": "chapter-rack",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1920.json",
+      "chapter": "chapter-harness",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    },
+    {
+      "source": "layout-1920.json",
+      "chapter": "chapter-agent",
+      "foreground": "rgb(43, 45, 48)",
+      "body_background": "rgb(246, 243, 236)",
+      "ratio": 12.461
+    }
+  ]
+}

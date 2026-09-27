@@ -1,0 +1,89 @@
+[
+  {
+    "p": 0.43747739057036056,
+    "chapter": "chapter-rack",
+    "head": {
+      "size": "32.8px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 452,
+        "h": 80.6640625
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4921875,
+        "w": 452,
+        "h": 52.21875
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 0.8124924635234535,
+    "chapter": "chapter-harness",
+    "head": {
+      "size": "32.8px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 452,
+        "h": 80.6640625
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4921875,
+        "w": 452,
+        "h": 52.21875
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  },
+  {
+    "p": 1,
+    "chapter": "chapter-agent",
+    "head": {
+      "size": "32.8px",
+      "weight": "700",
+      "family": "\"Inter Variable\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif, \"Noto Sans SC Variable\", \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Source Han Sans SC\", \"Source Han Sans CN\", system-ui, sans-serif",
+      "rect": {
+        "x": 0,
+        "y": 109.828125,
+        "w": 452,
+        "h": 80.6640625
+      }
+    },
+    "lead": {
+      "color": "rgb(43, 45, 48)",
+      "background": "rgb(246, 243, 236)",
+      "rect": {
+        "x": 0,
+        "y": 202.4921875,
+        "w": 452,
+        "h": 78.328125
+      }
+    },
+    "overflow": -15,
+    "labels": [],
+    "visible": "visible",
+    "focus": true
+  }
+]
