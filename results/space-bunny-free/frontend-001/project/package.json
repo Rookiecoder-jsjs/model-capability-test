@@ -1,0 +1,28 @@
+{
+  "name": "chip-to-agent",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "从芯片到 Agent —— 大模型部署与 Agent 应用全流程滚动叙事",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "verify": "node tools/verify.mjs",
+    "verify:responsive": "node tools/responsive.mjs",
+    "shots": "node tools/shots.mjs .shots 1366 893"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/noto-sans-sc": "^5.3.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

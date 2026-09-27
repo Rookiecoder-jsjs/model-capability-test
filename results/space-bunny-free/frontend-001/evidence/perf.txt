@@ -1,0 +1,21 @@
+
+== 性能采样 ==
+采样条件（结论必须与这组条件一起引用）：
+  渲染后端    headless Chromium，SwiftShader 软件渲染，无真实 GPU
+  viewport    1366×893，deviceScaleFactor 1，DPR 1
+  机器        10 逻辑核，17.2 GB，Node v24.18.0
+
+连续滚动 5000 ms（页面 rAF 自驱，脚本不节拍）:
+  帧数 301，平均帧间隔 16.67 ms → 60.0 fps
+  帧间隔 p50 16.60 / p90 17.40 / p99 17.80 ms
+  抖动（p99−p50）1.20 ms
+  每帧绘制面数均值 242，画布标注均值 1.1
+  相机缩放 43.3–238.5 px/世界单位
+
+静止后 1.5 s 内实际提交到 Canvas 的帧数:
+  第 01 章（画面已终态）      0 帧 → 已停绘
+  第 07 章（Harness 信号流动）91 帧 → 继续绘制（预期）
+  标签页 hidden              未验证 —— headless Chromium 不支持 CDP 模拟后台，document.hidden 恒为 false
+
+注：rAF 循环本身在上述所有情形下都还在跑（页面没有卡死），
+    停绘指的是不再向 Canvas 提交绘制帧。

@@ -1,0 +1,23 @@
+PASS  身份：芯片.parent 恒为 cardA，cardA.parent 恒为 serverA，serverA.parent 恒为 rackA  — cardA<serverA<rackA | cardA<serverA<rackA | cardA<serverA<rackA
+PASS  落位：各自装配完成后，世界位置误差 < 1e-12（芯片 p≥0.20 / 板卡 p≥0.30 / 服务器 p≥0.45）  — p=0.45: chip 2.8e-17 card 2.8e-17 srv 1.1e-16
+      p=0.6: chip 1.1e-16 card 1.1e-16 srv 5.7e-17
+      p=0.8: chip 1.1e-16 card 1.1e-16 srv 5.7e-17
+      p=1: chip 1.1e-16 card 1.1e-16 srv 5.6e-17
+PASS  可逆：正向 / 反向 / 跳转三种路径抵达同一 p，物体与相机完全一致  — 反向差 0.0e+0，跳转差 0.0e+0
+PASS  路径：装配过程中芯片始终在机柜顶盖之上（未穿透外壳）  — 最小间隙 1.406 @ p=0.251
+PASS  导航：八个章节按钮都能到达，且导航高亮 / 文字轨章节一致  — 0:chapter-chip 1:chapter-card 2:chapter-server 3:chapter-rack 4:chapter-cluster 5:chapter-model 6:chapter-harness 7:chapter-agent
+PASS  Agent：重放推进四步状态  — ["running","pending","pending","pending"]
+PASS  Agent：运行中禁用下载  — dl.disabled=true
+PASS  Agent：停止后定格  — run=stopped
+PASS  Agent：重新运行不产生重复执行（运行中再次 run 被忽略）  — second start returned false
+PASS  Agent：完成后四步全 done 且可下载  — run=done completions=1
+PASS  Agent：结果含进展与待办  — 项目进展简报进展部署需求已梳理；模型与算力配置待确认。待办确认模型与算力资源。补充评测任务。开始部署验证。
+PASS  窗口：p=1 时四层结构进入窗口运行区（embed=1）  — embed=1.000
+PASS  窗口：反向回到 p=0.9 时结构还原（embed=0）  — embed=0.000
+PASS  窗口：再次前进到 p=1 可复现（纯函数）  — Δ=(0.0e+0, 0.0e+0)
+PASS  布局：1366×893 / 1025×700 / 1920×1080 均无横向溢出  — 1366×893: 1366/1366  1025×700: 1025/1025  1920×1080: 1920/1920
+PASS  无障碍：可聚焦元素存在（导航 8 项 + 操作栏 + 跳跃链接）  — focusables=11
+
+控制台错误: 无
+
+结果: 16/16 通过

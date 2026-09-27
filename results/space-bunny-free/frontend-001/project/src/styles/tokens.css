@@ -1,0 +1,82 @@
+/* ==========================================================================
+   设计令牌
+   暖白背景 / 墨黑文字 / 克制绿。工程感来自：细边框、等宽数字、
+   极窄的绿色用色面、统一的 4px 基准栅格。
+   ========================================================================== */
+
+:root {
+  /* —— 底色：暖白（带一点纸感的三通道梯度，不是纯白） —— */
+  --paper: #f6f3ec;
+  --paper-raised: #fbf9f4;
+  --paper-sunken: #efeade;
+  --paper-panel: #fffdf9;
+
+  /* —— 墨黑：偏冷的中性黑，标题更黑，正文略提亮以保证长时间阅读 —— */
+  --ink: #17181a;
+  --ink-strong: #0b0c0d;
+  --ink-body: #2b2d30;
+  --ink-muted: #62656a;
+  --ink-faint: #8b8f95;
+
+  /* —— 克制绿：主绿只用于强调与进度，正文里的绿色不超过 3% —— */
+  --green: #1f7a4d;
+  --green-bright: #2e9a63;
+  --green-deep: #0f4f31;
+  --green-ink: #0f4f31;
+  --green-wash: #e6efe7;
+  --green-wash-2: #d6e4d8;
+
+  /* —— 昇腾风格的电路板绿（仅出现在芯片基板上） —— */
+  --pcb: #1d6b3f;
+  --pcb-dark: #14512f;
+  --pcb-trace: #2f8f5b;
+
+  /* —— 银灰金属（顶盖、风扇、导轨） —— */
+  --metal: #c9ccce;
+  --metal-light: #e2e4e6;
+  --metal-dark: #9aa0a5;
+
+  /* —— 语义 —— */
+  --line: #ddd8cc;
+  --line-strong: #c6c0b1;
+  --line-faint: #e9e5da;
+  --focus: #0b0c0d;
+  --danger: #a23a2c;
+
+  /* —— 字体栈 ——
+     Noto Sans SC Variable / Inter Variable 均来自 @fontsource-variable，
+     真实包含 wght 100–900 可变轴（不是把 400 假装成 700）。
+     系统栈仅作回退，回退链上仍有多个中文无衬线字体可用。 */
+  --font-cjk: 'Noto Sans SC Variable', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Source Han Sans SC', 'Source Han Sans CN', system-ui, sans-serif;
+  --font-latin: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: var(--font-latin), var(--font-cjk);
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, 'JetBrains Mono', Menlo, Consolas,
+    'Liberation Mono', monospace;
+
+  /* —— 4px 基准栅格 —— */
+  --u: 4px;
+  --u2: 8px;
+  --u3: 12px;
+  --u4: 16px;
+  --u6: 24px;
+  --u8: 32px;
+  --u10: 40px;
+  --u12: 48px;
+  --u16: 64px;
+
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 14px;
+
+  --measure: 34em; /* 正文理想行长 */
+  --rail-width: 452px;
+  --shell-max: 1680px;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --paper: #f6f3ec;
+    --paper-panel: #fffdf9;
+  }
+}

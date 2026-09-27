@@ -1,0 +1,26 @@
+PASS  桌面 1366×893：无横向溢出  — overflowX=0
+PASS  桌面 1366×893：动态主体可见  — static=false
+PASS  桌面 1366×893：Agent 窗口完整可见且操作栏在视口内  — win 1270×777 bar=true
+PASS  桌面 1025×700：无横向溢出  — overflowX=0
+PASS  桌面 1025×700：动态主体可见  — static=false
+PASS  桌面 1025×700：Agent 窗口完整可见且操作栏在视口内  — win 977×600 bar=true
+PASS  桌面 1920×1080：无横向溢出  — overflowX=0
+PASS  桌面 1920×1080：动态主体可见  — static=false
+PASS  桌面 1920×1080：Agent 窗口完整可见且操作栏在视口内  — win 1360×964 bar=true
+PASS  小屏 390×844：进入静态阅读布局（主体停用）  — static=true
+PASS  小屏 390×844：无横向溢出  — overflowX=0
+PASS  小屏 390×844：显示每章的静态示意图  — diagram=true
+PASS  小屏 390×844：八章文案都在 DOM 中  — chapters=8
+PASS  小屏 390×844：Agent 窗口静态可用  — {"active":true,"visible":true}
+PASS  文字放大 200%：检测到 text-200 并停用动态主体  — text200=true hidden=true
+PASS  文字放大 200%：无横向溢出  — overflowX=0
+PASS  文字放大 200%：八章文案可读  — live=chapter-chip
+PASS  减少动态效果：进入静态阅读布局，八章仍可读  — static=true
+PASS  减少动态效果：八章文案都在  — chapters=8
+PASS  键盘：Tab 首个焦点是跳跃链接  — skip-link 跳到正文
+PASS  键盘：导航按钮可聚焦并回车跳转  — live=chapter-cluster
+PASS  键盘：焦点有可见轮廓  — {"outline":"solid","width":"2px"}
+
+控制台错误: 无
+
+结果: 22/22 通过

@@ -1,0 +1,4 @@
+
+> chip-to-agent@1.0.0 typecheck
+> tsc --noEmit -p tsconfig.json
+

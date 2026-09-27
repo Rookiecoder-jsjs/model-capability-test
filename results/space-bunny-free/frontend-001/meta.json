@@ -1,0 +1,60 @@
+{
+  "prompt_id": "frontend-001",
+  "prompt_ref": "prompts/frontend/frontend-001.md",
+  "prompt_commit": null,
+  "prompt_title": "从芯片到 Agent 的连续装配网页",
+  "model": "space-bunny-free",
+  "model_id": "space-bunny-free",
+  "date": "2026-09-27T05:08:18Z",
+  "params": {
+    "agent": "claude-fable-5",
+    "scaffold": "vite 7 + typescript 5.9，react：否",
+    "network_access": "npm install（仅依赖），运行期无外部请求"
+  },
+  "type": "frontend",
+  "stack": ["typescript", "vite", "canvas2d"],
+  "verdict": "delivered-with-notes",
+  "summary": "滚动驱动的一镜到底叙事页：芯片→板卡→服务器→机柜→集群→模型层→Harness层→Agent层→进入 Agent 窗口。16/16 几何与交互校验、22/22 适配与可达性校验通过，性能采样 60.0 fps。已知限制 3 条（见 output.md「已知限制」）。",
+  "checks": {
+    "typecheck": "pass",
+    "verify": "16/16 pass",
+    "verify_responsive": "22/22 pass",
+    "build": "pass"
+  },
+  "content_boundary": {
+    "fabricated_clients": false,
+    "fabricated_metrics": false,
+    "external_api_calls": false,
+    "note": "Agent 窗口为本地演示，界面内常驻徽标「本地演示 · 无外部调用」；两处字体为 OFL-1.1 可分发字体。"
+  },
+  "unverified": [
+    "真实 GPU 下的帧率（采样来自 headless SwiftShader 软件渲染）",
+    "真实浏览器字号设置面板（200% 由 html{font-size:32px} 模拟）",
+    "触屏设备实测（390×844 为 Playwright isMobile+hasTouch 模拟）",
+    "屏幕阅读器（NVDA / VoiceOver）",
+    "标签页切后台后停止渲染（headless Chromium 不支持 CDP 模拟后台，document.hidden 恒为 false）",
+    "多显示器 / 浏览器缩放",
+    "长时间运行的内存占用"
+  ],
+  "artifacts": {
+    "entry": "project/index.html",
+    "source_lines": 5919,
+    "verify_script": "project/tools/verify.mjs",
+    "verify_log": "evidence/verify.txt",
+    "responsive_script": "project/tools/responsive.mjs",
+    "responsive_log": "evidence/responsive.txt",
+    "perf_script": "project/tools/perf.mjs",
+    "perf_log": "evidence/perf.txt",
+    "screenshots": "evidence/shots/",
+    "screenshot_count": 18
+  },
+  "build_env": {
+    "node": "v24.18.0",
+    "npm": "11.16.0",
+    "playwright": "1.63.0",
+    "verify_target": "生产构建 dist/ 经 vite preview 供给"
+  },
+  "setup": "npm install && npm run build",
+  "run": "npm run dev",
+  "judge": null
+}

@@ -1,0 +1,249 @@
+/* ==========================================================================
+   基础样式与排版
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* 横向溢出防护：任何子元素都不允许把视口撑宽 */
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink-body);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+  /* 中文保持自然字距：不加 letter-spacing，中文方块字面自带间距 */
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis-weight: none;
+  overflow-wrap: break-word;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* —— 焦点：键盘可见、对比度足够、任何模式下不被裁切 —— */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a {
+  color: var(--green-ink);
+  text-underline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 1.15em;
+}
+
+/* ==========================================================================
+   排版层级
+   中文标题：真实 700 字重（可变字体 wght 轴），收紧字距，
+   英文/数字用 Inter 的比例与基线，不与中文混排时人为加间距。
+   ========================================================================== */
+
+.t-display {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 6.4vw, 5.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: var(--ink-strong);
+  text-wrap: balance;
+}
+
+.t-h1 {
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  color: var(--ink-strong);
+  text-wrap: balance;
+}
+
+.t-h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+.t-lead {
+  font-weight: 400;
+  font-size: clamp(1.02rem, 1.18vw, 1.16rem);
+  line-height: 1.85;
+  color: var(--ink-body);
+  max-width: var(--measure);
+}
+
+.t-body {
+  font-weight: 400;
+  font-size: 0.975rem;
+  line-height: 1.8;
+  color: var(--ink-body);
+  max-width: var(--measure);
+}
+
+.t-small {
+  font-size: 0.845rem;
+  line-height: 1.65;
+  color: var(--ink-muted);
+}
+
+.t-micro {
+  font-size: 0.755rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+}
+
+/* 英文技术词 / 数字 / 代号：等宽或 Inter tabular，
+   统一 baseline 与字号比，中英混排时不额外加 letter-spacing。 */
+.tech {
+  font-family: var(--font-latin);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1, 'cv05' 1;
+  letter-spacing: 0;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9em;
+  letter-spacing: 0;
+}
+
+.num {
+  font-family: var(--font-latin);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+/* 小型全大写标签：工程铭牌感 */
+.label {
+  font-family: var(--font-latin);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.label-cn {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--green-ink);
+}
+
+/* 分隔线 */
+.rule {
+  height: 1px;
+  background: var(--line);
+  border: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: var(--u2);
+  left: var(--u2);
+  z-index: 200;
+  transform: translateY(-200%);
+  background: var(--ink-strong);
+  color: var(--paper);
+  padding: var(--u2) var(--u4);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* noscript 兜底（静态文案，JS 关闭时可读） */
+.noscript-note {
+  max-width: 44em;
+  margin: 0 auto;
+  padding: 18vh var(--u6) var(--u12);
+  color: var(--ink-body);
+}
+.noscript-note h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--ink-strong);
+  margin-bottom: var(--u4);
+}
+.noscript-note p {
+  margin-bottom: var(--u3);
+  line-height: 1.8;
+}
+.noscript-note__hint {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
